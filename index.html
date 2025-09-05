@@ -1,1 +1,123 @@
-hiiiiiiiiiiiiiiii
+<!doctype html>
+
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>পাঠকুটির — কোচিং সেন্টার</title>
+  <meta name="description" content="পাঠকুটির — প্রথম-দশম নিয়মিত ও বিষয়ভিত্তিক কোচিং, ভর্তি চলছে। সৌম্য সবুজ থিম, স্পেশাল ব্যাচ ও কোরআন শিক্ষা।" />
+  <style>
+    :root{
+      --bg:#07120f;
+      --green1:#0fb27a;
+      --green2:#00d36a;
+      --card:#0b1f1a;
+      --accent: linear-gradient(135deg,var(--green1),var(--green2));
+      --glass-border: rgba(15,178,122,0.18);
+      --muted: rgba(255,255,255,0.65);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: 'Noto Sans Bengali', 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color:#eaf9f0;
+      padding:40px 20px;
+      display:flex;justify-content:center;
+    }
+    .wrap{width:100%;max-width:1100px}
+    header{display:flex;gap:20px;align-items:center;justify-content:space-between;margin-bottom:28px;}
+    .brand{display:flex;gap:16px;align-items:center}
+    .logo{
+      width:64px;height:64px;border-radius:16px;background:var(--accent);
+      display:flex;align-items:center;justify-content:center;color:#042b24;font-weight:800;font-size:26px;box-shadow:0 6px 30px rgba(0,200,140,0.12);
+    }
+    .brand h1{font-size:20px;line-height:1;color:var(--green2)}
+    .brand p{font-size:13px;color:var(--muted)}
+    .cta{display:flex;gap:10px;align-items:center}
+    .btn{background:var(--accent);padding:12px 18px;border-radius:12px;color:#002016;font-weight:700;border:none;cursor:pointer;box-shadow:0 6px 18px rgba(0,200,140,0.2)}
+    .ghost{background:transparent;border:1px solid var(--glass-border);padding:10px 14px;border-radius:10px;color:var(--green1)}
+    .hero{background:rgba(12,34,28,0.55);border-radius:18px;padding:22px;display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:center}
+    .hero-left h2{color:var(--green2);font-size:28px;margin-bottom:8px}
+    .motto{font-weight:700;color:#dff8ec}
+    .intro{margin:14px 0;color:var(--muted);line-height:1.6}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .badge{background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:999px;border:1px solid var(--glass-border);font-weight:700;color:#dff8ec}
+    .contact-card{background:rgba(3,23,18,0.55);padding:16px;border-radius:14px;margin-top:40px}
+    .contact-card h3{color:var(--green1);margin-bottom:8px}
+    .contact-card p{color:var(--muted);font-size:14px}
+    .number{margin:6px 0;font-weight:700}
+    .social{margin-top:12px;display:flex;gap:10px}
+    .social a{width:34px;height:34px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.05);border-radius:50%;color:var(--green2);text-decoration:none;font-size:16px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .card{background:var(--card);border-radius:12px;padding:14px}
+    .card h4{color:var(--green1);margin-bottom:8px}
+    .card p{color:var(--muted);font-size:14px;line-height:1.5}
+    footer{margin-top:18px;padding:16px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+    @media(max-width:720px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.contact-card{order:-1}}
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div>
+          <h1>পাঠকুটির</h1>
+          <p>“জ্ঞানের পেছনে ছুটো, মার্কস তোমার পেছনে ছুটবে”</p>
+        </div>
+      </div>
+      <div class="cta">
+        <button class="btn" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">এখনই ভর্তি করুন</button>
+      </div>
+    </header><section class="hero">
+  <div class="hero-left">
+    <h2>প্রথম—দশম নিয়মিত ও বিষয়ভিত্তিক কোচিং</h2>
+    <div class="motto">স্পেশাল ব্যাচ, অতিরিক্ত কোর্স ও কোরআন শিক্ষা — ভর্তি চলছে</div>
+    <p class="intro">পাঠকুটির- এ আমরা শিক্ষার্থীদের সামগ্রিক উন্নয়নে বিশ্বাস করি। শান্ত পরিবেশে দক্ষ শিক্ষক দ্বারা নিয়মিত ক্লাস, সাপ্তাহিক ও মাসিক পরীক্ষা, দুর্বলদের অতিরিক্ত ক্লাস এবং মেধাভিত্তিক পুরস্কার প্রদান করা হয়।</p>
+    <div class="badges">
+      <div class="badge">গণিত • পদার্থবিজ্ঞান • রসায়ন</div>
+      <div class="badge">বাংলা • ইংরেজি • আইসিটি</div>
+      <div class="badge">জীববিজ্ঞান • স্পেশাল কোরআন</div>
+      <div class="badge">PECE, JSC, SSC & HSC স্পেশাল ব্যাচ</div>
+    </div>
+  </div>
+</section>
+
+<section class="grid">
+  <div class="card">
+    <h4>স্পেশাল ব্যাচ</h4>
+    <p>PECE, JSC, SSC & HSC স্পেশাল ব্যাচে অতিরিক্ত গুরুত্ব প্রদান করা হয়।</p>
+  </div>
+  <div class="card">
+    <h4>কোরআন শিক্ষা</h4>
+    <p>কোরআন মাজিদ ও তাজভিদ, আকাইদ ও ফিকহ, হাদিস শরিফসহ পূর্ণ কোরআন শিক্ষা।</p>
+  </div>
+  <div class="card">
+    <h4>অতিরিক্ত কোর্স</h4>
+    <p>গণিত, পদার্থবিজ্ঞান, রসায়ন, বাংলা — পরীক্ষা প্রস্তুতি সহ গভীর বিষয়ভিত্তিক ক্লাস।</p>
+  </div>
+</section>
+
+<section id="contact" class="contact-card">
+  <h3>ঠিকানা ও যোগাযোগ</h3>
+  <p>স্থান: আনসারী মসজিদ সংলগ্ন, ঠেঙ্গামারা, বগুড়া।</p>
+  <div class="number">📞 01745534674</div>
+  <div class="number">📞 019759466912</div>
+  <p>পরিচালনায়: মোঃ সানজিদ আহমেদ, মোঃ রেজওয়ান আহমেদ রাজ</p>
+  <div class="social">
+    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+  </div>
+</section>
+
+<footer>
+  <div><strong>পরিচালনায়:</strong> মোঃ সানজিদ আহমেদ • মোঃ রেজওয়ান আহমেদ রাজ</div>
+  <div>© পাঠকুটির — ভর্তি চলছে</div>
+</footer>
+
+  </div>
+</body>
+</html>

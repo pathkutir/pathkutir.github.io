@@ -1,3 +1,4 @@
+
 <!-- admission.html (fixed design + Telegram submit with checkbox subjects) -->
 <!doctype html>
 <html lang="bn">
@@ -151,10 +152,10 @@
       const now=new Date();
       const dateTime=now.toLocaleString("bn-BD",{timeZone:"Asia/Dhaka"});
 
-      const message=ভর্তি ফর্ম\n👤 নাম: ${student}\n👨 বাবার নাম: ${father}\n👩 মায়ের নাম: ${mother}\n📞 মোবাইল: ${phone}\n🏫 বিদ্যালয়: ${school}\n🏠 ঠিকানা: ${address}\n📚 বিষয়: ${subjects}\n✏ তথ্য: ${note}\n⏰ সাবমিশন: ${dateTime};
+      const message=`ভর্তি ফর্ম\n👤 নাম: ${student}\n👨 বাবার নাম: ${father}\n👩 মায়ের নাম: ${mother}\n📞 মোবাইল: ${phone}\n🏫 বিদ্যালয়: ${school}\n🏠 ঠিকানা: ${address}\n📚 বিষয়: ${subjects}\n✏️ তথ্য: ${note}\n⏰ সাবমিশন: ${dateTime}`;
 
       try{
-        const res=await fetch(https://api.telegram.org/bot${BOT_TOKEN}/sendMessage,{
+        const res=await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,{
           method:"POST",
           headers:{"Content-Type":"application/json"},
           body:JSON.stringify({chat_id:CHAT_ID,text:message})
@@ -173,7 +174,7 @@
     }
 
     function fallbackSend(message){
-      const url=https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(message)};
+      const url=`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(message)}`;
       window.open(url,"_blank");
       setStatus("⚠ সরাসরি পাঠানো সম্ভব হয়নি, নতুন ট্যাবে বিকল্প পদ্ধতি ব্যবহার করা হচ্ছে।");
       form.reset();
